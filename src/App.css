@@ -149,7 +149,6 @@ h1 {
 
     .partners__item {
         min-width: 229px;
-        flex-grow: 1;
     }
 }
 
@@ -170,6 +169,5 @@ h1 {
 
     .partners__item {
         width: 270px;
-        flex-grow: 0;
     }
 }
