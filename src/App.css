@@ -41,7 +41,7 @@ header {
 
 .search__mobile {
     display: flex;
-    padding-top: 12px;
+    padding: 12px 24px 24px 12px !important;
     border-top: 1px solid #BBC4D6;
 }
 
@@ -70,7 +70,8 @@ h1 {
 }
 
 .partners {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     flex-direction: column;
     gap: 20px;
     margin-bottom: 70px;
@@ -147,17 +148,17 @@ h1 {
         flex-wrap: wrap;
     }
 
-    .partners__item {
-        min-width: 229px;
+    .partners {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
     .content {
-        margin: 0 135px;
+        margin: 0 100px;
     }
     .header {
-        padding: 0 137px;
+        padding: 0 100px;
     }
     .header__left, .header__right {
         padding: 20px 0;
@@ -167,7 +168,7 @@ h1 {
         padding-left: 20px;
     }
 
-    .partners__item {
-        width: 270px;
+    .partners {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
