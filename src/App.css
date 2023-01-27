@@ -11,6 +11,7 @@ body {
 }
 header {
     background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 .search__ico {
     height: 16px;
@@ -101,7 +102,7 @@ h1 {
     .header {
         display: flex;
         justify-content: space-between;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
     }
 
     .header__left, .header__right {
@@ -155,10 +156,13 @@ h1 {
 
 @media (min-width: 1280px) {
     .content {
-        margin: 0 100px;
+        margin: auto;
+        padding: 0 100px;
+        /*margin: 0 100px;*/
+        max-width: 1440px;
     }
     .header {
-        padding: 0 100px;
+        /*padding: 0 100px;*/
     }
     .header__left, .header__right {
         padding: 20px 0;

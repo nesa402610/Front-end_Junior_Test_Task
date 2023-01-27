@@ -3,12 +3,14 @@ import MobileHeader from "./mobileHeader";
 import DesctopHeader from "./desctopHeader";
 
 const Header = () => {
-    return (
-        <header>
-            <MobileHeader/>
-            <DesctopHeader/>
-        </header>
-    );
+  return (
+    <header>
+      <div className={'content'}>
+        <MobileHeader/>
+        <DesctopHeader/>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
